@@ -41,4 +41,9 @@ public class Job implements Action{
         System.out.println("ten vi tri la: "+name);
         System.out.println("muc thuong la: "+reward);
     }
+
+    @Override
+    public int getId() {
+        return id;
+    }
 }

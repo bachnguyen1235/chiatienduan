@@ -6,6 +6,8 @@ class Human {
     private String address;
     private int sdt;
 
+    public Human() {
+    }
     public Human(String name, String address, int sdt) {
         this.name = name;
         this.address = address;

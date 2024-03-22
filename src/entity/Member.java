@@ -7,11 +7,7 @@ public class Member extends Human implements Action {
     private int id;
     private double wage;
 
-    public Member(String name, String address, int sdt,  double wage) {
-        super(name, address, sdt);
-        this.id = idAuto++;
-        this.wage = wage;
-    }
+
 
 
 
@@ -24,11 +20,17 @@ public class Member extends Human implements Action {
         super.setSdt(new Scanner((System.in)).nextInt());
         System.out.println("nhap muc luong:");
         wage = new Scanner(System.in).nextDouble();
+
     }
     public void printInfor(){
         System.out.println("ten thanh vien la: "+super.getName());
         System.out.println("dia chi thanh vien: "+super.getAddress());
         System.out.println("Sdt thanh vien: "+super.getSdt());
         System.out.println("Muc luong thanh vien: "+wage);
+    }
+
+    @Override
+    public int getId() {
+        return id;
     }
 }
