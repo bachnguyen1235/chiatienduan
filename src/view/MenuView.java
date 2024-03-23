@@ -43,9 +43,11 @@ public class MenuView {
                     jobService.inputJobs();
                     break;
                 case 4:
+
                     jobService.printJobs();
                     break;
                 case 5:
+
                     break;
                 case 6:
                     break;
